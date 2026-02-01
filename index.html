@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Valentine</title>
+
+<style>
+body {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px;
+}
+.yes {
+  background: red;
+  color: white;
+}
+.no {
+  background: gray;
+  position: absolute;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+  <h2>Meera, will you be my Valentine? ❤️</h2>
+  <button class="yes" onclick="yes()">Yes</button>
+  <button class="no" onmouseover="move()">No</button>
+</div>
+
+<script>
+function yes() {
+  alert("Yayyy 💕 I love you!");
+}
+function move() {
+  let b = document.querySelector(".no");
+  b.style.left = Math.random()*80 + "%";
+  b.style.top = Math.random()*80 + "%";
+}
+</script>
+
+</body>
+  </html>
